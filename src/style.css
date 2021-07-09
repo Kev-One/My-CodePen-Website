@@ -1,0 +1,198 @@
+
+/* 
+### Primary
+- Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%)
+
+### Neutral
+
+- Very Light Grayish Blue: hsl(240, 78%, 98%)
+- Light grayish Blue: hsl(234, 14%, 74%)
+- Grayish Blue: hsl(233, 13%, 49%)
+- Dark Grayish Blue: hsl(232, 13%, 33%)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:380,580&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 50px 0 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+iframe {
+  max-width: 90%;
+  margin-bottom: 30px;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+section h2 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.bg-yellow {
+  background-color: #15aeff;
+}
+
+.btn{
+  background-color: #15aeff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #8a7400;
+  color: black;
+  display: inline-block;
+  font-size: 14px;
+  padding: 12px 15px;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.1s ease;
+}
+
+
+.btn-ghost {
+  background-color: black;
+  color: #15aeff;
+  box-shadow: none;
+  border: none;
+}
+
+.btn-ghost:active {
+  transform: none;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Nav & Heafder */
+nav {
+  background-color: #15aeff;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.09);
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* right:0; will do the same as width:100% */
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  margin:0 15px;
+}
+
+.header-left {
+  padding-right: 10px;
+  width: 60%;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+/* Features Section */
+.feature {
+  background: #15aeff;
+  border-radius: 10px;
+  /*box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);*/
+  margin: 0 1.66%;
+  padding: 10px;
+  width: 30%;
+  text-align: center; 
+}
+
+.feature i {
+  color: #000;
+  font-size: 30px;  
+  margin-top: 15px;
+}
+
+.feature h2 {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.feature p {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+/* Form section */
+form {
+  margin-border-bottom: 40px;
+}
+
+form .flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form input[type="email"] {
+  border-radius: 5px;
+  border: 0;
+  color: black;
+  display: inline-block;
+  font-size: 14px;
+  flex: 1;
+  padding: 10px 25px;
+  margin-right: 10px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: black;
+  color: #15aeff;
+  padding: 10px;  
+  text-align: center;
+}
+
+footer .fa-heart {
+  color: red;
+}
+
+.header-right {
+  order: 0;
+}
+
+.header-left {
+  order:1;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.header-left h1 {
+  display: none;
+}
+
+.feature {
+  margin: 10px;
+  width: 100%;
+}
+
+.flex input, .flex .btn-ghost {
+  margin: 5px 10px;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .header-left, .header-right {
+    width: 100%;
+  }
+}
+
